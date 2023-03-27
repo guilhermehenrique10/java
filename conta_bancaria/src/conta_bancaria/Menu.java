@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import conta_bancaria.util.Cores;
 
+import contabancaria.model.Conta_Bancaria;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -13,6 +15,22 @@ public class Menu {
 		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
         String titular;
         float saldo, limite, valor;
+        
+        Conta_Bancaria c1 = new Conta_Bancaria(1, 123, 1, "Guilherme Henrique ", 100000.00f );
+        
+        c1.visualizar();
+        
+        System.out.println("\nSaldo da conta " + c1.getSaldo() + "\n " );
+        
+		c1.setTitular("\nGuilherme Henrique Lima ");
+		
+		c1.visualizar();
+		
+		c1.sacar(200000.0f);
+		c1.visualizar();
+		
+		c1.depositar(2000.0f);
+		c1.visualizar();
 		
 		while (true) {
 		
@@ -176,7 +194,7 @@ public class Menu {
             
             break;
 		default :
-			System.out.println(Cores.TEXT_WHITE_BOLD + "Opção Inválida! \n\n ");
+			System.out.println(Cores.TEXT_WHITE_BOLD + "Opção Inválida!\n " + Cores.TEXT_RESET);
 			break;
 		
 		}
@@ -186,9 +204,9 @@ public class Menu {
 	}
 		public static void sobre() {
 			System.out.println("\n*********************************************************");
-			System.out.println("Guilherme Henrique - guilhermehenriquelima02@gmail.com");
-			System.out.println("github.com/guilhermehenrique10");
-			System.out.println("*********************************************************");
+			System.out.println("Guilherme Henrique - guilhermehenriquelima02@gmail.com ");
+			System.out.println("github.com/guilhermehenrique10 ");
+			System.out.println("***********************************************************");
 
 	}
 		
