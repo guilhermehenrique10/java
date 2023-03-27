@@ -17,6 +17,10 @@ public class Conta_Bancaria {
 		this.saldo = saldo;
 	}
 
+	public Conta_Bancaria() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getNumero() {
 		return numero;
 	}
@@ -76,7 +80,7 @@ public class Conta_Bancaria {
 	
 	public void visualizar() {
 		
-		String tipo = " ";
+		String tipo = "";
 		
 		switch (this.tipo) {
 		case 1 -> tipo = "Conta Corrente ";
