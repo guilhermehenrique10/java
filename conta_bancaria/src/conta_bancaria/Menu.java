@@ -17,24 +17,10 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 
-		Conta_Bancaria c1 = new Conta_Bancaria(1, 123, 1, "Guilherme Henrique ", 100000.00f);
-		c1.visualizar();
-
 		ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "Gabriel Machado", 100000.00f, 1000.00f);
 		cc1.visualizar();
-		cc1.sacar(100900);
-		cc1.visualizar();
-		cc1.depositar(2000);
-		cc1.visualizar();
-
-		Conta_Bancaria c2 = new Conta_Bancaria();
-		c2.visualizar();
-
-		ContaPoupanca cp1 = new ContaPoupanca(2, 123, 2, "Maria dos Santos", 100000.0f, 15);
-        cp1.visualizar();
-        cp1.sacar(1000.0f);
-        cp1.visualizar();
-        cp1.depositar(5000.0f);
+		
+		ContaPoupanca cp1 = new ContaPoupanca(2, 123, 2, "Maria dos Santos", 100000.0f, 28);
         cp1.visualizar();
 
 		while (true) {
