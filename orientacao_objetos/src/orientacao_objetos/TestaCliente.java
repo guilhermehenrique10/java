@@ -4,9 +4,11 @@ public class TestaCliente {
 
 	public static void main(String[] args) {
 		
-		Cliente cl = new Cliente ("Maria", 1, 1000.00f, 2, 4);
+		PessoaFisica pf = new PessoaFisica ("Guilherme", 1, 1000.00f, 2, 4);
+		pf.visualizar();
 		
-		cl.visualizar();
+		PessoaJuridica pj = new PessoaJuridica("Guilherme Henrique", 18, 1000.00f, 8, 3, "40.400.578/0123-90");
+		pj.visualizar();
 		
 	}
 
